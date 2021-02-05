@@ -19,7 +19,7 @@ public class Program {
 		
 		
 		List<String> newList = products.stream()
-				.map(Product::staticMyFunction)
+				.map(Product::nonStaticMyFunction)
 				.collect(Collectors.toList());
 		
 		newList.forEach(System.out::println);

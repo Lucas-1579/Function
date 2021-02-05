@@ -31,8 +31,8 @@ public class Product {
 		this.price = price;
 	}
 	
-	public static String staticMyFunction(Product p) {
-		return p.getName().toUpperCase();
+	public String nonStaticMyFunction() {
+		return name.toUpperCase();
 	}
 
 
