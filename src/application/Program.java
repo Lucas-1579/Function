@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import entitie.Product;
-import util.MyFunction;
 
 public class Program {
 
@@ -20,7 +19,7 @@ public class Program {
 		
 		
 		List<String> newList = products.stream()
-				.map(new MyFunction())
+				.map(Product::staticMyFunction)
 				.collect(Collectors.toList());
 		
 		newList.forEach(System.out::println);
